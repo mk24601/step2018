@@ -27,7 +27,7 @@ def str_score(ana_str,dict_str):
         if c in list_ana:
             list_ana.remove(c)
         else:
-            return 0 # 1文字でも「dict_scoreはあるがana_strにはない」文字があったら，dict_scoreは答えにはなり得ないのでスコアは0．(例：dict_score = "lite", ana_str = "light"の場合など)
+            return 0 # 1文字でも「dict_scoreはあるがana_strにはない」文字があったら，dict_scoreは答えにはなり得ないのでスコアは0．(例：ana_score = "lite", dict_str = "light"の場合など)
     
     #ここから下は「dict_scoreの全文字がana_strにある」場合のみ進む
     for c in ana_str:
