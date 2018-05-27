@@ -1,3 +1,6 @@
+
+#README→解説は https://hackmd.io/3ZZ_TI8dSzyYCZMyAwwjOg?view に載せています
+
 import csv
 
 def cha_score(c): # 各アルファベットごとのスコアを返す関数
