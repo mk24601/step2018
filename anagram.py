@@ -22,7 +22,7 @@ def strToList(strTo): # 文字列の全ての文字をリストにするだけ�
 
 #アナグラムの問題(ana_str)に対し，任意の辞書の単語(dict_str)が答えになり得るか，なるとしたらスコアはいくつか返す関数
 def str_score(ana_str,dict_str): 
-    score = 1
+    sum_str = 1
     list_ana = strToList(ana_str) #ana_strに入っている文字を要素とするリスト
     list_dict = strToList(dict_str) #dict_strに入っている文字を要素とするリスト
 
@@ -35,9 +35,9 @@ def str_score(ana_str,dict_str):
     #ここから下は「dict_scoreの全文字がana_strにある」場合のみ進む
     for c in ana_str:
         if c in list_dict:
-            score += cha_score(c)
+            sum_str += cha_score(c)
             list_dict.remove(c)
-    return score*score
+    return sum_str * sum_str #合計の二乗がスコアとなるルール
 
 if __name__ == '__main__':
 
